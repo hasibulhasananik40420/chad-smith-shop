@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       maxWidth:{
-        container:"1200px"
+        container:"1320px"
       },
       fontFamily:{
         Poppins:['Poppins','sans-serif']
