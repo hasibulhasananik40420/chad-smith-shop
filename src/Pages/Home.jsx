@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 
 import { useState } from 'react';
 import Container from "../shared/Container";
@@ -5,12 +6,27 @@ import product1 from "../assets/product1.png";
 import product2 from "../assets/product2.png";
 import product3 from "../assets/product3.png";
 
-import { IoIosExpand } from "react-icons/io";
-import { MdOutlineClose } from "react-icons/md";
+import { IoIosArrowBack, IoIosArrowForward, IoIosExpand } from "react-icons/io";
+import {  MdOutlineClose } from "react-icons/md";
+
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+const NextArrow = ({ onClick }) => (
+  <IoIosArrowForward 
+    className="size-7 absolute top-1/2 right-[-40px] transform -translate-y-1/2 text-black cursor-pointer"
+    onClick={onClick}
+  />
+);
+
+const PrevArrow = ({ onClick }) => (
+  <IoIosArrowBack 
+    className="size-7 absolute top-1/2 left-[-40px] transform -translate-y-1/2 text-black cursor-pointer"
+    onClick={onClick}
+  />
+);
 
 const Home = () => {
   // eslint-disable-next-line no-unused-vars
@@ -23,35 +39,41 @@ const Home = () => {
     {
       _id: 1,
       image: product1,
-      caption: 'Premium Statue Collection'
+      caption: 'Premium Statue Collection',
+      size:'46” X 72” yarn tapestry'
     },
     {
       _id: 2,
       image: product2,
-      caption: 'Premium Statue Collection 2'
+      caption: 'Premium Statue Collection 2',
+      size:'46” X 72” yarn tapestry2'
     },
     {
       _id: 3,
       image: product3,
-      caption: 'Premium Statue Collection 3'
+      caption: 'Premium Statue Collection 3',
+      size:'46” X 72” yarn tapestry3'
     },
 
     {
       _id: 4,
       image: 'https://images.squarespace-cdn.com/content/v1/551777cee4b0767424416ab0/1670972932603-TSA6PFF8YBSQDTEOHVHF/thumbnail-9.jpg?format=500w',
-      caption: 'Premium Statue Collection'
+      caption: 'Premium Statue Collection',
+      size:'46” X 72” yarn tapestry4'
     },
 
     {
       _id: 5,
       image: 'https://images.squarespace-cdn.com/content/v1/551777cee4b0767424416ab0/1670973203292-9YPAGX6G0XVMUGXCY58C/thumbnail-7.jpg?format=500w',
-      caption: 'Premium Statue Collection'
+      caption: 'Premium Statue Collection',
+      size:'46” X 72” yarn tapestry5'
     },
 
     {
       _id: 6,
       image: 'https://images.squarespace-cdn.com/content/v1/551777cee4b0767424416ab0/1670987375382-YZ7AG4K2SJ12OWR7RRQQ/8C60263E-2655-4394-AD0A-5883CDD11544.jpeg?format=500w',
-      caption: 'Premium Statue Collection'
+      caption: 'Premium Statue Collection',
+      size:'46” X 72” yarn tapestry6'
     },
 
 
@@ -60,11 +82,19 @@ const Home = () => {
   const sliderSettings = {
     dots: false,
     infinite: true,
+    arrows:true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
     afterChange: (index) => setCurrentSlide(index),
+    
   };
+
+
+
+  
 
   const handleExpandClick = (index) => {
     setSliderModalOpen(true);
@@ -110,24 +140,42 @@ const Home = () => {
 
          {sliderModalOpen && (
            
-          <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black z-50 modal-overlay" >
+          <div className="fixed top-0 left-0 w-full h-full bg-white z-50 modal-overlay max-w-[1920px] mx-auto " >
              
-            <div className="w-[1000px] h-[600px] ring-2 ring-white zoom-in">
+           <div className='lg:flex justify-center 2xl:gap-[164px] lg:gap-20 mt-[127px]'>
+           <div className="w-[600px] h-[728px] zoom-in">
             
-              <Slider {...sliderSettings} initialSlide={currentSlide}>
-                {projects.map((project) => (
-                  <div key={project._id} className="h-[600px]">
-                    <img src={project?.image} alt="expanded image" className="w-full h-full" />
-                  </div>
-                ))}
-              </Slider>
-              <div className='flex justify-end mt-1'>
-                <MdOutlineClose className="size-7 text-red-500 cursor-pointer" onClick={handleCloseModal} />
-              </div>
-            </div>
+            <Slider {...sliderSettings} initialSlide={currentSlide}>
+              {projects.map((project) => (
+                <div key={project._id} className="h-[728px]">
+                  <img src={project?.image} alt="expanded image" className="w-full h-full" />
+                </div>
+              ))}
+            </Slider>
 
             
           </div>
+          
+
+             <div className='zoom-in mt-[58px]'>
+              <h1 className='text-[#1C1C1C] text-[32px] font-Poppins font-normal leading-[44px]'> {projects[currentSlide]?.caption}</h1>
+
+              <p className='text-[#1C1C1C] text-[16px] font-Poppins font-normal leading-[24px] mt-2'>{projects[currentSlide]?.size}</p>
+             </div>
+
+           </div>
+
+           <div className='flex justify-end mt-5 absolute top-2 right-0'>
+              <MdOutlineClose className="size-7 text-black cursor-pointer" onClick={handleCloseModal} />
+            </div>
+
+
+           
+
+            
+          </div>
+
+          
 
            
         )}

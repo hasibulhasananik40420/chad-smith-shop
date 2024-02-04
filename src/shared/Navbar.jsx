@@ -1,12 +1,16 @@
-import { Link } from "react-router-dom"
+import { Link, NavLink, useLocation } from "react-router-dom"
 import Container from "./Container"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 const Navbar = () => {
  
+  const location = useLocation();
+  const [activeLink, setActiveLink] = useState('');
 
-  const [activeLink, setActiveLink] = useState('home');
+  useEffect(() => {
+    setActiveLink(location.pathname);
+  }, [location.pathname]);
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
@@ -27,27 +31,37 @@ const Navbar = () => {
         </Link>
 
         <div className="flex items-center gap-10">
-          <Link
-            to={'/'}
-            onClick={() => handleLinkClick('home')}
-            className={`${activeLink === 'home' ? 'text-[#1C1C1C]' : 'text-[#999]'}  text-[16px] font-Poppins font-normal leading-6 uppercase`}
-          >
-            WORK samples
-          </Link>
-          <Link
-            to={'/bio'}
-            onClick={() => handleLinkClick('bio')}
-            className={`${activeLink === 'bio' ? 'text-[#1C1C1C]' : 'text-[#999]'}  text-[16px] font-Poppins font-normal leading-6 uppercase`}
-          >
-            bio
-          </Link>
-          <Link
-            to={'/contact'}
-            onClick={() => handleLinkClick('contact')}
-            className={`${activeLink === 'contact' ? 'text-[#1C1C1C]' : 'text-[#999]'}  text-[16px] font-Poppins font-normal leading-6 uppercase`}
-          >
-            Contact
-          </Link>
+        
+
+             <NavLink
+              exact
+              to={'/'}
+              className={` text-[16px] font-Poppins font-normal leading-6 uppercase ${activeLink === '/' ? 'text-[#1C1C1C]' : 'text-[#999]'}`}
+              onClick={() => handleLinkClick('/')}
+            >
+              WORK samples
+            </NavLink>
+
+       
+           
+         
+
+               <NavLink
+              to={'/bio'}
+              className={` text-[16px] font-Poppins font-normal leading-6 uppercase ${activeLink === '/bio' ? 'text-[#1C1C1C]' : 'text-[#999]'}`}
+              onClick={() => handleLinkClick('/bio')}
+            >
+              bio
+            </NavLink>
+         
+
+            <NavLink
+              to={'/contact'}
+              className={` text-[16px] font-Poppins font-normal leading-6 uppercase ${activeLink === '/contact' ? 'text-[#1C1C1C]' : 'text-[#999]'}`}
+              onClick={() => handleLinkClick('/contact')}
+            >
+              Contact
+            </NavLink>
         </div>
       </div>
     </Container>
