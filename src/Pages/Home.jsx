@@ -140,14 +140,14 @@ const Home = () => {
 
          {sliderModalOpen && (
            
-          <div className="fixed top-0 left-0 w-full h-full bg-white z-50 modal-overlay max-w-[1920px] mx-auto " >
+          <div className="fixed top-0 left-0 w-full h-full bg-white z-50 modal-overlay max-w-[1920px] mx-auto 2xl:px-0 lg:px-2 px-2" >
              
-           <div className='lg:flex justify-center 2xl:gap-[164px] lg:gap-20 mt-[127px]'>
-           <div className="w-[600px] h-[728px] zoom-in">
+           <div className='lg:flex justify-center 2xl:gap-[164px] lg:gap-20 2xl:mt-[127px] lg:mt-[50px] mt-20 md:mt-[120px]'>
+           <div className="2xl:w-[600px] lg:w-[600px] 2xl:h-[728px] lg:h-[500px] h-full w-full zoom-in">
             
             <Slider {...sliderSettings} initialSlide={currentSlide}>
               {projects.map((project) => (
-                <div key={project._id} className="h-[728px]">
+                <div key={project._id} className="2xl:h-[728px] lg:h-[500px] w-full h-[450px] md:h-[600px] outline-0 border-none">
                   <img src={project?.image} alt="expanded image" className="w-full h-full" />
                 </div>
               ))}
@@ -157,7 +157,7 @@ const Home = () => {
           </div>
           
 
-             <div className='zoom-in mt-[58px]'>
+             <div className='zoom-in 2xl:mt-[58px] lg:mt-[58px] mt-10'>
               <h1 className='text-[#1C1C1C] text-[32px] font-Poppins font-normal leading-[44px]'> {projects[currentSlide]?.caption}</h1>
 
               <p className='text-[#1C1C1C] text-[16px] font-Poppins font-normal leading-[24px] mt-2'>{projects[currentSlide]?.size}</p>
@@ -165,7 +165,7 @@ const Home = () => {
 
            </div>
 
-           <div className='flex justify-end mt-5 absolute top-2 right-0'>
+           <div className='flex justify-end mt-5 absolute top-2 2xl:right-0 lg:right-2'>
               <MdOutlineClose className="size-7 text-black cursor-pointer" onClick={handleCloseModal} />
             </div>
 
