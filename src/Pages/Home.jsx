@@ -162,7 +162,7 @@ const Home = () => {
                     {projects[currentSlide]?.caption}
                   </h1>
 
-                  <p className="text-[#1C1C1C] md:text-[16px] text-[15px] font-Poppins font-normal leading-[24px] mt-2">
+                  <p className="text-[#1C1C1C] text-[16px]  font-Poppins font-normal leading-[24px] mt-2">
                     {projects[currentSlide]?.size}
                   </p>
                 </div>
