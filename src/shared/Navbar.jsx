@@ -1,6 +1,7 @@
 import { Link, NavLink, useLocation } from "react-router-dom"
 import Container from "./Container"
 import { useEffect, useState } from "react";
+import MobileMenu from "../components/MobileMenu/MobileMenu";
 
 
 const Navbar = () => {
@@ -20,9 +21,11 @@ const Navbar = () => {
   
 
 
-    <div className="bg-white">
+   <div className="bg-white">
+     <div className="lg:block hidden">
     <Container>
-      <div className="flex justify-between items-center h-[195px]">
+    
+     <div className="flex justify-between items-center h-[195px] ">
         <Link
           to={'/'}
           className="text-[#1C1C1C] md:text-[34px] text-[20px] font-Poppins font-normal tracking-normal cursor-pointer"
@@ -64,8 +67,20 @@ const Navbar = () => {
             </NavLink>
         </div>
       </div>
+
+    
+   
+
+
     </Container>
   </div>
+
+       <div className="block lg:hidden">
+        <MobileMenu/>
+       </div>
+
+
+   </div>
   )
 }
 

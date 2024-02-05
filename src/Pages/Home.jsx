@@ -16,14 +16,14 @@ import "slick-carousel/slick/slick-theme.css";
 
 const NextArrow = ({ onClick }) => (
   <IoIosArrowForward 
-    className="size-7 absolute top-1/2 right-[-40px] transform -translate-y-1/2 text-black cursor-pointer"
+    className="size-9 absolute top-1/2 right-[-60px] transform -translate-y-1/2 text-gray-500 cursor-pointer"
     onClick={onClick}
   />
 );
 
 const PrevArrow = ({ onClick }) => (
   <IoIosArrowBack 
-    className="size-7 absolute top-1/2 left-[-40px] transform -translate-y-1/2 text-black cursor-pointer"
+    className="size-9 absolute top-1/2 left-[-60px] transform -translate-y-1/2 text-gray-500 cursor-pointer"
     onClick={onClick}
   />
 );
@@ -33,6 +33,9 @@ const Home = () => {
   const [expandedImage, setExpandedImage] = useState(null);
   const [sliderModalOpen, setSliderModalOpen] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
+
+
+
 
 
   const projects = [
@@ -99,12 +102,18 @@ const Home = () => {
   const handleExpandClick = (index) => {
     setSliderModalOpen(true);
     setCurrentSlide(index);
+     
   };
 
   const handleCloseModal = () => {
     setSliderModalOpen(false);
     setExpandedImage(null);
+    
+   
   };
+
+  
+
 
   return (
   
@@ -118,17 +127,18 @@ const Home = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 mt-[66px]">
           {projects.map((project, index) => (
-            <div key={project._id} className="relative lg:w-[375px] xl:w-[424px] w-full h-[468px]">
-              <div className="h-[424px]">
+            <div key={project._id} className="relative lg:w-[375px] xl:w-[424px] w-full h-[468px] group">
+              <div className="h-[424px] overflow-hidden group">
                 <img
                   className="w-full h-full object-cover"
                   src={project?.image}
                   alt="product image"
                   onClick={() => handleExpandClick(index)}
                 />
+                 <div className="overlay absolute top-0 left-0 w-full h-[424px] bg-opacity-50 bg-[#ACACAC] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               <IoIosExpand
-                className="size-5 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white cursor-pointer"
+                className="size-5 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 onClick={() => handleExpandClick(index)}
               />
               <p className="text-[#404040] text-[18px] font-Poppins font-normal leading-[28px] text-center mt-4">
@@ -140,7 +150,7 @@ const Home = () => {
 
          {sliderModalOpen && (
            
-          <div className="fixed top-0 left-0 w-full h-full bg-white z-50 modal-overlay max-w-[1920px] mx-auto 2xl:px-0 lg:px-2 px-2" >
+          <div className={`fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-white z-50 max-w-[1920px] mx-auto 2xl:px-0 lg:px-2 px-2 `}  >
              
            <div className='lg:flex justify-center 2xl:gap-[164px] lg:gap-20 2xl:mt-[127px] lg:mt-[50px] mt-20 md:mt-[120px]'>
            <div className="2xl:w-[600px] lg:w-[600px] 2xl:h-[728px] lg:h-[500px] h-full w-full zoom-in">
@@ -165,7 +175,7 @@ const Home = () => {
 
            </div>
 
-           <div className='flex justify-end mt-5 absolute top-2 2xl:right-0 lg:right-2'>
+           <div className='flex justify-end mt-5 absolute top-8 2xl:right-16 lg:right-5'>
               <MdOutlineClose className="size-7 text-black cursor-pointer" onClick={handleCloseModal} />
             </div>
 
@@ -179,6 +189,9 @@ const Home = () => {
 
            
         )}
+
+
+
 
         
       </div>
