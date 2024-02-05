@@ -8,7 +8,7 @@ const Bio = () => {
   return (
     <div>
         <Container>
-            <div>
+            <div className="2Issue:px-4 px-0 md:px-0 lg:px-0 xl:px-0 2xl:px-0">
                 <h1 className="text-[#1C1C1C] text-[18px] font-Poppins font-medium leading-7 uppercase ">Bio</h1>
 
                 <div className="mt-[66px] lg:flex gap-[112px]">

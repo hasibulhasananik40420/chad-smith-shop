@@ -21,7 +21,7 @@ const Navbar = () => {
   
 
 
-   <div className="bg-white">
+   <div className="bg-white 2Issue:px-4 px-0 md:px-0 lg:px-0 xl:px-0 2xl:px-0">
      <div className="lg:block hidden">
     <Container>
     
