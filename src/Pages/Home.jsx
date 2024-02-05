@@ -135,10 +135,10 @@ const Home = () => {
                   alt="product image"
                   onClick={() => handleExpandClick(index)}
                 />
-                 <div className="overlay absolute top-0 left-0 w-full h-[424px] bg-opacity-50 bg-[#ACACAC] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                 <div className="overlay absolute top-0 left-0 w-full h-[424px] bg-opacity-40 bg-black opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               <IoIosExpand
-                className="size-5 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                className="size-8 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 onClick={() => handleExpandClick(index)}
               />
               <p className="text-[#404040] text-[18px] font-Poppins font-normal leading-[28px] text-center mt-4">
