@@ -21,11 +21,11 @@ const Navbar = () => {
   
 
 
-   <div className="bg-white 2Issue:px-4 px-0 md:px-0 lg:px-0 xl:px-0 2xl:px-0">
+   <div className="bg-white">
      <div className="lg:block hidden">
     <Container>
     
-     <div className="flex justify-between items-center h-[195px] ">
+     <div className="flex justify-between items-center h-[195px]">
         <Link
           to={'/'}
           className="text-[#1C1C1C] md:text-[34px] text-[20px] font-Poppins font-normal tracking-normal cursor-pointer"

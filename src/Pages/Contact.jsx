@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div>
       <Container>
-       <div className="2Issue:px-4 px-0 md:px-0 lg:px-0 xl:px-0 2xl:px-0">
+       <div className="">
        <div className="mt-[32px] lg:w-[584px] w-full mx-auto">
 
 <form className="flex flex-col gap-[15px]">

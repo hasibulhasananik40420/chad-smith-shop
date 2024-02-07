@@ -103,7 +103,7 @@ const Home = () => {
   return (
     <div className="">
       <Container>
-        <div className="2Issue:px-4 px-0 md:px-0 lg:px-0 xl:px-0 2xl:px-0">
+        <div className="">
           <h4 className="text-[#1C1C1C] text-[18px] font-medium font-Poppins leading-[28px] uppercase">
             WORK SAMPLES
           </h4>
@@ -112,16 +112,16 @@ const Home = () => {
             {projects.map((project, index) => (
               <div
                 key={project._id}
-                className="relative lg:w-[375px] 2Issue:w-[400px] xl:w-[424px] w-full h-[468px] group"
+                className="relative lg:w-[280px] xl:w-[290px] 2xl:w-[424px] w-full 2xl:h-[468px] xl:h-[370px] lg:h-[360px] group"
               >
-                <div className="h-[424px] overflow-hidden group">
+                <div className="2xl:h-[424px] xl:h-[330px] lg:h-[320px] h-[350px] overflow-hidden group">
                   <img
                     className="w-full h-full object-cover"
                     src={project?.image}
                     alt="product image"
                     onClick={() => handleExpandClick(index)}
                   />
-                  <div className="overlay absolute top-0 left-0 w-full h-[424px] bg-opacity-40 bg-black opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="overlay absolute top-0 left-0 w-full 2xl:h-[424px] xl:h-[330px] lg:h-[320px] h-[350px] bg-opacity-40 bg-black opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <IoIosExpand
                   className="size-8 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -138,18 +138,18 @@ const Home = () => {
             <div
               className={`fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-white z-50 max-w-[1920px] mx-auto 2xl:px-0 lg:px-2 px-2 2Issue:px-4`}
             >
-              <div className="lg:flex justify-center 2xl:gap-[164px] lg:gap-20 2xl:mt-[127px] lg:mt-[50px] mt-20 md:mt-[120px]">
-                <div className="2xl:w-[600px] lg:w-[600px] 2xl:h-[728px] lg:h-[500px] h-full w-full zoom-in">
+              <div className="lg:flex justify-center 2xl:gap-[164px] lg:gap-20 2xl:mt-[127px] lg:mt-[70px] xl:mt-[90px] mt-20 md:mt-[120px]">
+                <div className="2xl:w-[600px] lg:w-[440px] xl:w-[550px] 2xl:h-[728px] lg:h-[470px] xl:h-[500px] h-full w-full zoom-in">
                   <Slider {...sliderSettings} initialSlide={currentSlide}>
                     {projects.map((project) => (
                       <div
                         key={project._id}
-                        className="2xl:h-[728px] lg:h-[500px] w-full h-[450px] md:h-[600px] outline-0 border-none"
+                        className="2xl:h-[728px] lg:h-[470px] xl:h-[500px] w-full h-[450px] md:h-[600px] outline-0 border-none"
                       >
                         <img
                           src={project?.image}
                           alt="expanded image"
-                          className="w-full h-full"
+                          className="w-full h-full object-cover"
                         />
                       </div>
                     ))}
