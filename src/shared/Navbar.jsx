@@ -30,7 +30,7 @@ const Navbar = () => {
           to={'/'}
           className="text-[#1C1C1C] md:text-[34px] text-[20px] font-Poppins font-normal tracking-normal cursor-pointer"
         >
-          ThisCrates
+          Chad Smith
         </Link>
 
         <div className="flex items-center gap-10">
@@ -39,7 +39,7 @@ const Navbar = () => {
              <NavLink
               exact
               to={'/'}
-              className={` text-[16px] font-Poppins font-normal leading-6 uppercase ${activeLink === '/' ? 'text-[#1C1C1C]' : 'text-[#999]'}`}
+              className={` text-[14px] font-Poppins font-normal leading-6 uppercase ${activeLink === '/' ? 'text-[#1C1C1C]' : 'text-[#999]'}`}
               onClick={() => handleLinkClick('/')}
             >
               WORK samples
@@ -51,7 +51,7 @@ const Navbar = () => {
 
                <NavLink
               to={'/bio'}
-              className={` text-[16px] font-Poppins font-normal leading-6 uppercase ${activeLink === '/bio' ? 'text-[#1C1C1C]' : 'text-[#999]'}`}
+              className={` text-[14px] font-Poppins font-normal leading-6 uppercase ${activeLink === '/bio' ? 'text-[#1C1C1C]' : 'text-[#999]'}`}
               onClick={() => handleLinkClick('/bio')}
             >
               bio
@@ -60,7 +60,7 @@ const Navbar = () => {
 
             <NavLink
               to={'/contact'}
-              className={` text-[16px] font-Poppins font-normal leading-6 uppercase ${activeLink === '/contact' ? 'text-[#1C1C1C]' : 'text-[#999]'}`}
+              className={` text-[14px] font-Poppins font-normal leading-6 uppercase ${activeLink === '/contact' ? 'text-[#1C1C1C]' : 'text-[#999]'}`}
               onClick={() => handleLinkClick('/contact')}
             >
               Contact

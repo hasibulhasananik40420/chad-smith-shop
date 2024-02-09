@@ -19,7 +19,7 @@ const MobileMenu = () => {
           to={'/'}
           className="text-[#1C1C1C] md:text-[34px] text-[20px] font-Poppins font-normal tracking-normal cursor-pointer"
         >
-          ThisCrates
+          Chad Smith
         </Link>
            </div>
 

@@ -37,45 +37,23 @@ const Home = () => {
     {
       _id: 1,
       image: product1,
-      caption: "Premium Statue Collection",
+      caption: "'Self-portrait' [2021]",
       size: "46” X 72” yarn tapestry",
     },
     {
       _id: 2,
       image: product2,
-      caption: "Premium Statue Collection 2",
+      caption: "'Please help me [2022]",
       size: "46” X 72” yarn tapestry2",
     },
     {
       _id: 3,
       image: product3,
-      caption: "Premium Statue Collection 3",
+      caption: "'A talk on the mind' [2022]",
       size: "46” X 72” yarn tapestry3",
     },
 
-    {
-      _id: 4,
-      image:
-        "https://images.squarespace-cdn.com/content/v1/551777cee4b0767424416ab0/1670972932603-TSA6PFF8YBSQDTEOHVHF/thumbnail-9.jpg?format=500w",
-      caption: "Premium Statue Collection",
-      size: "46” X 72” yarn tapestry4",
-    },
-
-    {
-      _id: 5,
-      image:
-        "https://images.squarespace-cdn.com/content/v1/551777cee4b0767424416ab0/1670973203292-9YPAGX6G0XVMUGXCY58C/thumbnail-7.jpg?format=500w",
-      caption: "Premium Statue Collection",
-      size: "46” X 72” yarn tapestry5",
-    },
-
-    {
-      _id: 6,
-      image:
-        "https://images.squarespace-cdn.com/content/v1/551777cee4b0767424416ab0/1670987375382-YZ7AG4K2SJ12OWR7RRQQ/8C60263E-2655-4394-AD0A-5883CDD11544.jpeg?format=500w",
-      caption: "Premium Statue Collection",
-      size: "46” X 72” yarn tapestry6",
-    },
+   
   ];
 
   const sliderSettings = {
@@ -104,8 +82,8 @@ const Home = () => {
     <div className="">
       <Container>
         <div className="">
-          <h4 className="text-[#1C1C1C] text-[18px] font-medium font-Poppins leading-[28px] uppercase">
-            WORK SAMPLES
+          <h4 className="text-[#1C1C1C] text-[16px] font-medium font-Poppins  uppercase">
+          WORK samples
           </h4>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 mt-[66px]">
@@ -127,7 +105,7 @@ const Home = () => {
                   className="size-8 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   onClick={() => handleExpandClick(index)}
                 />
-                <p className="text-[#404040] text-[18px] font-Poppins font-normal leading-[28px] text-center mt-4">
+                <p className="text-[#404040] text-[14px] font-Poppins font-normal text-center mt-4">
                   {project?.caption}
                 </p>
               </div>
