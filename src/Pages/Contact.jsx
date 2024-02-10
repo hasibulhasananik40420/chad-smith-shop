@@ -90,7 +90,7 @@ const Contact = () => {
           </div>
 
           <div className="bg-[#25242D] lg:w-[910px] lg:h-[198px] w-full h-full mx-auto mt-[66px] lg:px-[120px] lg:py-12 px-[30px] py-[30px]">
-            <h3 className="text-white lg:text-[20px] text-[16px] font-Poppins font-semibold leading-[30px]">
+            <h3 className="text-white md:text-[20px] text-[14px] font-Poppins font-semibold leading-[30px]">
               Sign up with your email address to receive news and updates
             </h3>
 
@@ -102,7 +102,7 @@ const Contact = () => {
                 id=""
                 placeholder="Email"
               />
-              <button className="w-[102px] h-[48px] bg-white text-[#25242D] text-[16px] font-Poppins font-semibold leading-6">
+              <button className="md:w-[102px] w-full h-[48px] bg-white text-[#25242D] text-[16px] font-Poppins font-semibold leading-6">
                 Sign Up
               </button>
             </div>
