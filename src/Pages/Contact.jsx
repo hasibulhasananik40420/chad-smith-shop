@@ -90,19 +90,19 @@ const Contact = () => {
           </div>
 
           <div className="bg-[#25242D] lg:w-[910px] lg:h-[198px] w-full h-full mx-auto mt-[66px] lg:px-[120px] lg:py-12 px-[30px] py-[30px]">
-            <h3 className="text-white md:text-[20px] text-[14px] font-Poppins font-semibold leading-[30px]">
+            <h3 className="text-white md:text-[20px] text-[18px] font-Poppins font-semibold leading-[30px]">
               Sign up with your email address to receive news and updates
             </h3>
 
-            <div className="mt-6 flex">
+            <div className="mt-6 md:flex">
               <input
-                className="lg:w-[568px] w-ful h-[48px] bg-[#25242D] border-[1px] border-white pl-4 text-white text-[16px] font-Poppins font-normal leading-6 outline-0"
+                className="lg:w-[568px] w-full h-[48px] bg-[#25242D] border-[1px] border-white pl-4 text-white text-[16px] font-Poppins font-normal leading-6 outline-0"
                 type="email"
                 name=""
                 id=""
                 placeholder="Email"
               />
-              <button className="md:w-[102px] w-full h-[48px] bg-white text-[#25242D] text-[16px] font-Poppins font-semibold leading-6">
+              <button className="w-[102px]  h-[48px] mt-3 md:mt-0 bg-white text-[#25242D] text-[16px] font-Poppins font-semibold leading-6">
                 Sign Up
               </button>
             </div>
