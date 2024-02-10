@@ -9,10 +9,8 @@ export default {
       maxWidth:{
         container:"1320px"
       },
-      screens:{
-        '2Issue': {'min': '1300px', 'max': '1500px'},
-      },
       fontFamily:{
+        FuturaPT: ['FuturaPT', 'sans-serif'],
         Poppins:['Poppins','sans-serif']
       }
     },

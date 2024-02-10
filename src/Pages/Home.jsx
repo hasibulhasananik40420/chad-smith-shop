@@ -37,19 +37,19 @@ const Home = () => {
     {
       _id: 1,
       image: product1,
-      caption: "'Self-portrait' [2021]",
+      caption: "'Self-portrait' (2021)",
       size: "46” X 72” yarn tapestry",
     },
     {
       _id: 2,
       image: product2,
-      caption: "'Please help me [2022]",
+      caption: "'Please help me' (2022)",
       size: "46” X 72” yarn tapestry2",
     },
     {
       _id: 3,
       image: product3,
-      caption: "'A talk on the mind' [2022]",
+      caption: "'A talk on the mind' (2022)",
       size: "46” X 72” yarn tapestry3",
     },
 
@@ -105,7 +105,7 @@ const Home = () => {
                   className="size-8 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   onClick={() => handleExpandClick(index)}
                 />
-                <p className="text-[#404040] text-[14px] font-Poppins font-normal text-center mt-4">
+                <p className="text-[#404040] text-[14px] font-FuturaPT font-light leading-[22.4px]  tracking-[0.84px] text-center mt-4 ">
                   {project?.caption}
                 </p>
               </div>
@@ -114,7 +114,7 @@ const Home = () => {
 
           {sliderModalOpen && (
             <div
-              className={`fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-white z-50 max-w-[1920px] mx-auto 2xl:px-0 lg:px-2 px-2 2Issue:px-4`}
+              className={`fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-white z-50 max-w-[1920px] mx-auto 2xl:px-0 lg:px-2 px-2 xl:px-4`}
             >
               <div className="lg:flex justify-center 2xl:gap-[164px] lg:gap-20 2xl:mt-[127px] lg:mt-[70px] xl:mt-[90px] mt-20 md:mt-[120px]">
                 <div className="2xl:w-[600px] lg:w-[440px] xl:w-[550px] 2xl:h-[728px] lg:h-[470px] xl:h-[500px] h-full w-full zoom-in">
