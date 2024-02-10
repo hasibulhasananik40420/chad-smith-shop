@@ -7,7 +7,7 @@ const Contact = () => {
        <div className="">
        <div className="mt-[32px] lg:w-[584px] w-full mx-auto">
 
-<form className="flex flex-col gap-[15px]">
+        <form className="flex flex-col gap-[15px]">
    <div className="lg:flex gap-6">
    <div >
      <label htmlFor="First Name*" className="text-[#1C1C1C] text-[14px] font-Poppins font-normal leading-5">First Name*</label>

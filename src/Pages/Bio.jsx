@@ -10,7 +10,7 @@ const Bio = () => {
             <div className="mb-6">
                 <h1 className="text-[#1C1C1C] text-[18px] font-Poppins font-medium leading-7 uppercase ">Bio</h1>
 
-                <div className="mt-[66px] lg:flex gap-20">
+                <div className="mt-[32px] lg:flex gap-20">
 
                   <div className="lg:w-[536px] w-full h-[444px] xl:h-[444px] 2xl:h-[600px]">
                      <img className="w-full h-full object-cover" src={chad2} alt="" />
