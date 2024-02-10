@@ -21,23 +21,23 @@ const Bio = () => {
 
                      <div className="flex flex-col gap-3 mt-4">
 
-                        <div className="flex gap-3">
+                        <div className="flex gap-3 items-center">
                   
-                         <div className="h-[2px] w-[13px] mt-2 bg-black"></div>
+                         <div className="h-[2px] w-[13px] bg-black"></div>
                         <p className="text-[#080808] text-[14px] font-Poppins font-light leading-6 ">Contemporary Artist  born in Washington, DC, 1988</p>
                         </div>
 
 
-                        <div className="flex gap-3">
-                        <div className="h-[2px] w-[13px] mt-2 bg-black"></div>
+                        <div className="flex gap-3 items-center">
+                        <div className="h-[2px] w-[13px] bg-black"></div>
                         <p className="text-[#080808] text-[14px] font-Poppins font-light leading-6 ">Bachelor's Degree from Hampton University, 2010</p>
                         </div>
 
                         
 
 
-                        <div className="flex  gap-3">
-                        <div className="h-[2px] w-[13px] mt-2 bg-black"></div>
+                        <div className="flex  gap-3 items-center">
+                        <div className="h-[2px] w-[13px] bg-black"></div>
                         <p className="text-[#080808] text-[14px] font-Poppins font-light leading-6 ">Current Medium: Collaboration, 3D Printing & Photography</p>
                         </div>
 
