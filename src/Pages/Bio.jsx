@@ -19,7 +19,7 @@ const Bio = () => {
                   <div className="lg:w-[750px] xl:w-[750px] 2xl:w-[850px] w-full mt-10 md:mt-14 lg:mt-0">
                      <h1 className="text-[24px] text-[#080808] font-Poppins font-light leading-[20px]">Chad Smith</h1>
 
-                     <div className="flex flex-col gap-3 mt-4">
+                     <div className="flex flex-col gap-2 mt-4">
 
                         <div className="flex gap-3 items-center">
                   
