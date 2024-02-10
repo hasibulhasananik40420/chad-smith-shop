@@ -10,7 +10,7 @@ const Bio = () => {
             <div className="mb-6">
                 <h1 className="text-[#1C1C1C] text-[18px] font-Poppins font-medium leading-7 uppercase ">Bio</h1>
 
-                <div className="mt-[32px] lg:flex lg:gap-24 xl:gap-24 2xl:gap-[120px]">
+                <div className="mt-[32px] lg:flex lg:gap-24 xl:gap-24 2xl:gap-[150px]">
 
                   <div className="lg:w-[536px] w-full h-[444px] xl:h-[444px] 2xl:h-[600px]">
                      <img className="w-full h-full object-cover" src={chad2} alt="" />
@@ -23,13 +23,14 @@ const Bio = () => {
 
                         <div className="flex gap-3 items-center">
                   
-                         <div className="h-[2px] w-[13px] bg-black"></div>
+                         {/* <div className="h-[2px] w-[13px] bg-black"></div> */}
+                         <div className="border-[1px] border-black w-[13px]"></div>
                         <p className="text-[#080808] text-[14px] font-Poppins font-light leading-6 ">Contemporary Artist  born in Washington, DC, 1988</p>
                         </div>
 
 
                         <div className="flex gap-3 items-center">
-                        <div className="h-[2px] w-[13px] bg-black"></div>
+                        <div className="border-[1px] border-black w-[13px]"></div>
                         <p className="text-[#080808] text-[14px] font-Poppins font-light leading-6 ">Bachelor's Degree from Hampton University, 2010</p>
                         </div>
 
@@ -37,7 +38,7 @@ const Bio = () => {
 
 
                         <div className="flex  gap-3 items-center">
-                        <div className="h-[2px] w-[13px] bg-black"></div>
+                        <div className="border-[1px] border-black w-[13px]"></div>
                         <p className="text-[#080808] text-[14px] font-Poppins font-light leading-6 ">Current Medium: Collaboration, 3D Printing & Photography</p>
                         </div>
 
