@@ -43,7 +43,7 @@ const Home = () => {
     {
       _id: 2,
       image: product2,
-      caption: "'Please help me' (2022)",
+      caption: "'please help me' (2022)",
       size: "46” X 72” yarn tapestry2",
     },
     {

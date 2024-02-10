@@ -17,7 +17,7 @@ const Bio = () => {
                   </div>
 
                   <div className="lg:w-[750px] xl:w-[750px] 2xl:w-[850px] w-full mt-10 md:mt-14 lg:mt-0">
-                     <h1 className="text-[24px] text-[#080808] font-Poppins font-light leading-[30px]">Chad Smith</h1>
+                     <h1 className="text-[24px] text-[#080808] font-Poppins font-light leading-[20px]">Chad Smith</h1>
 
                      <div className="flex flex-col gap-3 mt-4">
 
@@ -46,7 +46,7 @@ const Bio = () => {
                      <div className="mt-5">
                          <h1 className="text-[24px] text-[#080808] font-Poppins font-light leading-[30px]">Artist Statement</h1>
 
-                        <p className="text-[#080808] mt-3 text-[14px] font-Poppins font-light leading-6 ">I've always been interested in working across mediums. In my mid-20s, I began collaborating with other artists in the medium of Video Art. Using Collaboration as a tool allowed me to enter other artist's styles, and extend my own style, to create something unachievable alone. I've currently landed in 3D Printing and Photography, collaborating with illustrators, animators and 3D printing professionals, to build a collection of new work. "Self-portrait", "Please help me", and "A talk on the mind" are a few of my favorites from the collection so far.</p>
+                        <p className="text-[#080808] mt-3 text-[14px] font-Poppins font-light leading-6 ">I've always been interested in working across mediums. In my mid-20s, I began collaborating with other artists in the medium of Video Art. Using Collaboration as a tool allowed me to enter other artist's styles, and extend my own style, to create something unachievable alone. I've currently landed in 3D Printing and Photography, collaborating with illustrators, animators and 3D printing professionals, to build a collection of new work. "Self-portrait", "please help me", and "A talk on the mind" are a few of my favorites from the collection so far.</p>
                         </div>
 
 
