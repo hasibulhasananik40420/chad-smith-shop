@@ -5,6 +5,7 @@ const Contact = () => {
     <div>
       <Container>
        <div className="">
+       <h1 className="text-[#1C1C1C] text-[18px] font-Poppins font-medium leading-7 uppercase ">Contact</h1>
        <div className="mt-[32px] lg:w-[584px] w-full mx-auto">
 
         <form className="flex flex-col gap-[15px]">
