@@ -10,13 +10,13 @@ const Bio = () => {
             <div className="mb-6">
                 <h1 className="text-[#1C1C1C] text-[18px] font-Poppins font-medium leading-7 uppercase ">Bio</h1>
 
-                <div className="mt-[66px] lg:flex 2xl:flex 2xl:gap-10 lg:gap-20 xl:gap-20">
+                <div className="mt-[66px] lg:flex gap-20">
 
-                  <div className="lg:w-[536px] w-full h-[444px]">
-                     <img className="w-full h-full object-contain" src={chad2} alt="" />
+                  <div className="lg:w-[536px] w-full h-[444px] xl:h-[444px] 2xl:h-[600px]">
+                     <img className="w-full h-full object-cover" src={chad2} alt="" />
                   </div>
 
-                  <div className="lg:w-[672px] w-full mt-10 md:mt-14 lg:mt-0">
+                  <div className="lg:w-[682px] xl:w-[682px] 2xl:w-[750px] w-full mt-10 md:mt-14 lg:mt-0">
                      <h1 className="text-[24px] text-[#080808] font-Poppins font-semibold leading-[30px]">Chad Smith</h1>
 
                      <div className="flex flex-col gap-3 mt-4">
