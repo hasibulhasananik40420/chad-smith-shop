@@ -153,13 +153,13 @@ const Home = () => {
         <img
           src={project?.extrapopup || project?.image} // Use extrapopup if available, else use the regular image
           alt="expanded image"
-          className=" object-cover w-full h-full"
+          className=" object-fill w-full h-full"
         />
       ) : (
         <img
           src={project?.image}
           alt="expanded image"
-          className=" object-cover w-full h-full"
+          className=" object-fill w-full h-full"
         />
       )}
     </div>
