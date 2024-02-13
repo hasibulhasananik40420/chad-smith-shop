@@ -127,7 +127,7 @@ const Home = () => {
             >
               <div className="lg:flex justify-center 2xl:gap-20 lg:gap-20 2xl:mt-[127px] lg:mt-[70px] xl:mt-[90px] mt-20 md:mt-[120px]">
 
-                <div className="2xl:w-[550px] lg:w-[550px] xl:w-[550px] border border-black rounded-sm w-full h-full zoom-in">
+                <div className="2xl:w-[550px] lg:w-[550px] xl:w-[550px]  w-full h-full zoom-in">
                   {/* <Slider {...sliderSettings} initialSlide={currentSlide}>
                     {projects.map((project) => (
                       <div
