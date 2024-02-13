@@ -120,13 +120,13 @@ const Home = () => {
             <div
               className={`fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-black z-50 max-w-[1920px]  mx-auto 2xl:px-0 lg:px-2 px-2 xl:px-4`}
             >
-              <div className="lg:flex justify-center 2xl:gap-20 lg:gap-20 2xl:mt-[127px] lg:mt-[70px] xl:mt-[0px] mt-20 md:mt-[120px]">
-                <div className="2xl:w-[550px] lg:w-[550px] xl:w-[550px] bg-black  w-full h-full zoom-in">
+              <div className="lg:flex justify-center 2xl:gap-20 lg:gap-20 2xl:mt-[20px] lg:mt-[70px] xl:mt-[0px] mt-20 md:mt-[120px]">
+                <div className="2xl:w-[650px] lg:w-[550px] xl:w-[550px] bg-black  w-full h-full zoom-in">
                   <Slider {...sliderSettings} initialSlide={currentSlide}>
                     {projects.map((project, index) => (
                       <div
                         key={project._id}
-                        className="2xl:w-[550px] lg:w-[550px] xl:w-[550px] 2xl:h-[350px] lg:h-[350px] xl:h-[650px] w-full h-[350px] md:h-[600px] outline-0 border-none mt-[32px] md:mt-[32px] lg:mt-0 xl:mt-0 2xl:mt-0"
+                        className="2xl:w-[550px] lg:w-[550px] xl:w-[550px] 2xl:h-[750px] lg:h-[350px] xl:h-[650px] w-full h-[350px] md:h-[600px] outline-0 border-none mt-[32px] md:mt-[32px] lg:mt-0 xl:mt-0 2xl:mt-0"
                       >
                         {index === currentSlide ? (
                           <img
