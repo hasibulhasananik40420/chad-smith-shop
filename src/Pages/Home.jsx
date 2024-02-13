@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Container from "../shared/Container";
-import product1 from "../assets/product1.png";
+import product1 from "../assets/image 7.png";
 import product2 from "../assets/product2.png";
 import product3 from "../assets/product3.png";
 import productextra from "../assets/product33.png";
