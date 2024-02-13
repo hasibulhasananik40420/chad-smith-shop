@@ -118,10 +118,10 @@ const Home = () => {
 
           {sliderModalOpen && (
             <div
-              className={`fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-black z-50 max-w-[1920px]  mx-auto 2xl:px-0 lg:px-2 px-2 xl:px-4`}
+              className={`fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-white z-50 max-w-[1920px]  mx-auto 2xl:px-0 lg:px-2 px-2 xl:px-4`}
             >
               <div className="lg:flex justify-center 2xl:gap-20 lg:gap-20 2xl:mt-[60px] lg:mt-[70px] xl:mt-[40px] mt-20 md:mt-[120px]">
-                <div className="2xl:w-[650px] lg:w-[550px] xl:w-[550px] bg-black  w-full h-full zoom-in">
+                <div className="2xl:w-[650px] lg:w-[550px] xl:w-[550px]   w-full h-full zoom-in">
                   <Slider {...sliderSettings} initialSlide={currentSlide}>
                     {projects.map((project, index) => (
                       <div
