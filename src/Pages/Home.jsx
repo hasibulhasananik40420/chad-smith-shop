@@ -91,7 +91,7 @@ const Home = () => {
     <div className="mb-6">
       <Container>
         <div className="">
-          <h4 className="text-[#1C1C1C] text-[16px] font-medium font-Poppins uppercase">
+          <h4 className="text-[#1C1C1C] text-[16px] font-medium font-Poppins uppercase mt-6 md:mt-6 lg:mt-0 xl:mt-0 2xl:mt-0">
           WORK samples
           </h4>
 
@@ -127,7 +127,7 @@ const Home = () => {
             >
               <div className="lg:flex justify-center 2xl:gap-20 lg:gap-20 2xl:mt-[127px] lg:mt-[70px] xl:mt-[90px] mt-20 md:mt-[120px]">
 
-                <div className="2xl:w-[550px] lg:w-[550px] xl:w-[550px]  w-full h-full zoom-in">
+                <div className="2xl:w-[550px] lg:w-[550px] xl:w-[550px] border border-black rounded-sm w-full h-full zoom-in">
                   {/* <Slider {...sliderSettings} initialSlide={currentSlide}>
                     {projects.map((project) => (
                       <div
@@ -147,19 +147,19 @@ const Home = () => {
   {projects.map((project, index) => (
     <div
       key={project._id}
-      className="2xl:w-[550px] lg:w-[550px] xl:w-[550px] border 2xl:h-[450px] lg:h-[450px] xl:h-[450px] w-full h-[450px] md:h-[600px] outline-0 border-none mt-[32px] md:mt-[32px] lg:mt-0 xl:mt-0 2xl:mt-0"
+      className="2xl:w-[550px] lg:w-[550px] xl:w-[550px] 2xl:h-[350px] lg:h-[350px] xl:h-[350px] w-full h-[350px] md:h-[600px] outline-0 border-none mt-[32px] md:mt-[32px] lg:mt-0 xl:mt-0 2xl:mt-0"
     >
       {index === currentSlide ? (
         <img
           src={project?.extrapopup || project?.image} // Use extrapopup if available, else use the regular image
           alt="expanded image"
-          className=" object-fill w-full h-full"
+          className=" object-contain w-full h-full"
         />
       ) : (
         <img
           src={project?.image}
           alt="expanded image"
-          className=" object-fill w-full h-full"
+          className=" object-contain w-full h-full"
         />
       )}
     </div>
@@ -182,7 +182,7 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className="flex justify-end mt-5 absolute top-8 2xl:right-16 right-2 lg:right-5">
+              <div className="flex justify-end md:mt-5 mt-0 absolute top-8 2xl:right-16 right-2 lg:right-5">
                 <MdOutlineClose
                   className="lg:size-7 size-10 text-black cursor-pointer"
                   onClick={handleCloseModal}
