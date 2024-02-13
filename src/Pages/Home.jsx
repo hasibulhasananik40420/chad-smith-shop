@@ -127,7 +127,7 @@ const Home = () => {
             >
               <div className="lg:flex justify-center 2xl:gap-20 lg:gap-20 2xl:mt-[127px] lg:mt-[70px] xl:mt-[90px] mt-20 md:mt-[120px]">
 
-                <div className="2xl:w-[550px] lg:w-[550px] xl:w-[550px]  w-full h-full zoom-in">
+                <div className="2xl:w-[550px] lg:w-[550px] xl:w-[550px] bg-black  w-full h-full zoom-in">
                   {/* <Slider {...sliderSettings} initialSlide={currentSlide}>
                     {projects.map((project) => (
                       <div
@@ -153,13 +153,13 @@ const Home = () => {
         <img
           src={project?.extrapopup || project?.image} // Use extrapopup if available, else use the regular image
           alt="expanded image"
-          className=" object-center w-full h-full"
+          className=" object-contain w-full h-full"
         />
       ) : (
         <img
           src={project?.image}
           alt="expanded image"
-          className=" object-center w-full h-full"
+          className=" object-contain w-full h-full"
         />
       )}
     </div>
