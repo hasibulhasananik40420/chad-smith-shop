@@ -3,9 +3,9 @@
 import { useState } from "react";
 import Container from "../shared/Container";
 import product1 from "../assets/products.jpg";
-import product2 from "../assets/product2.png";
-import product3 from "../assets/product3.png";
-import productextra from "../assets/product33.png";
+import product2 from "../assets/products2.jpg";
+import product3 from "../assets/products3.png";
+import productextra from "../assets/products44.png";
 
 import { IoIosArrowBack, IoIosArrowForward, IoIosExpand } from "react-icons/io";
 import { MdOutlineClose } from "react-icons/md";
@@ -120,13 +120,13 @@ const Home = () => {
             <div
               className={`fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-white z-50 max-w-[1920px]  mx-auto 2xl:px-0 lg:px-2 px-2 xl:px-4`}
             >
-              <div className="lg:flex justify-center 2xl:gap-20 lg:gap-20 2xl:mt-[60px] lg:mt-[70px] xl:mt-[40px] mt-20 md:mt-[120px]">
+              <div className="lg:flex justify-center 2xl:gap-20 lg:gap-20 2xl:mt-[60px] lg:mt-[20px] xl:mt-[40px] mt-20 md:mt-[120px]">
                 <div className="2xl:w-[650px] lg:w-[550px] xl:w-[550px]   w-full h-full zoom-in">
                   <Slider {...sliderSettings} initialSlide={currentSlide}>
                     {projects.map((project, index) => (
                       <div
                         key={project._id}
-                        className="2xl:w-[650px] lg:w-[550px] xl:w-[550px] 2xl:h-[640px] lg:h-[540px] xl:h-[540px] w-full h-[350px] md:h-[600px] outline-0 border-none mt-[32px] md:mt-[32px] lg:mt-0 xl:mt-0 2xl:mt-0"
+                        className="2xl:w-[650px] lg:w-[550px] xl:w-[550px] 2xl:h-[640px] lg:h-[520px] xl:h-[540px] w-full h-[350px] md:h-[600px] outline-0 border-none mt-[32px] md:mt-[32px] lg:mt-0 xl:mt-0 2xl:mt-0"
                       >
                         {index === currentSlide ? (
                           <img
