@@ -5,6 +5,8 @@ import Container from "../shared/Container";
 import product1 from "../assets/product1.png";
 import product2 from "../assets/product2.png";
 import product3 from "../assets/product3.png";
+import productextra from "../assets/product33.png";
+
 
 import { IoIosArrowBack, IoIosArrowForward, IoIosExpand } from "react-icons/io";
 import { MdOutlineClose } from "react-icons/md";
@@ -49,6 +51,7 @@ const Home = () => {
     {
       _id: 2,
       image: product2,
+      extrapopup:productextra,
       caption: "'please help me' (2022)",
       size: "46” X 72” yarn tapestry2",
     },
@@ -122,23 +125,49 @@ const Home = () => {
             <div
               className={`fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-white z-50 max-w-[1920px] mx-auto 2xl:px-0 lg:px-2 px-2 xl:px-4`}
             >
-              <div className="lg:flex justify-center 2xl:gap-[164px] lg:gap-20 2xl:mt-[127px] lg:mt-[70px] xl:mt-[90px] mt-20 md:mt-[120px]">
+              <div className="lg:flex justify-center 2xl:gap-20 lg:gap-20 2xl:mt-[127px] lg:mt-[70px] xl:mt-[90px] mt-20 md:mt-[120px]">
 
-                <div className="2xl:w-[600px] lg:w-[440px] xl:w-[550px] 2xl:h-[728px] lg:h-[470px] xl:h-[500px] h-full w-full zoom-in">
-                  <Slider {...sliderSettings} initialSlide={currentSlide}>
+                <div className="2xl:w-[550px] lg:w-[550px] xl:w-[550px]  w-full h-full zoom-in">
+                  {/* <Slider {...sliderSettings} initialSlide={currentSlide}>
                     {projects.map((project) => (
                       <div
                         key={project._id}
-                        className="2xl:h-[728px] lg:h-[470px] xl:h-[500px] w-full h-[450px] md:h-[600px] outline-0 border-none mt-[32px] md:mt-[32px] lg:mt-0 xl:mt-0 2xl:mt-0"
+                        className="2xl:h-[450px] lg:h-[450px] xl:h-[450px] w-full h-[450px] md:h-[600px] outline-0 border-none mt-[32px] md:mt-[32px] lg:mt-0 xl:mt-0 2xl:mt-0"
                       >
                         <img
                           src={project?.image}
                           alt="expanded image"
-                          className="w-full h-full object-cover"
+                          className=" object-cover w-full h-full"
                         />
                       </div>
                     ))}
-                  </Slider>
+                  </Slider> */}
+
+<Slider {...sliderSettings} initialSlide={currentSlide}>
+  {projects.map((project, index) => (
+    <div
+      key={project._id}
+      className="2xl:w-[550px] lg:w-[550px] xl:w-[550px] border 2xl:h-[450px] lg:h-[450px] xl:h-[450px] w-full h-[450px] md:h-[600px] outline-0 border-none mt-[32px] md:mt-[32px] lg:mt-0 xl:mt-0 2xl:mt-0"
+    >
+      {index === currentSlide ? (
+        <img
+          src={project?.extrapopup || project?.image} // Use extrapopup if available, else use the regular image
+          alt="expanded image"
+          className=" object-cover w-full h-full"
+        />
+      ) : (
+        <img
+          src={project?.image}
+          alt="expanded image"
+          className=" object-cover w-full h-full"
+        />
+      )}
+    </div>
+  ))}
+</Slider>
+
+
+
                 </div>
 
                 <div className="zoom-in 2xl:mt-[58px] lg:mt-[58px] mt-6">
