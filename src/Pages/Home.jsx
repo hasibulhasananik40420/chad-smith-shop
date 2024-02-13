@@ -160,7 +160,7 @@ const Home = () => {
 
               <div className="flex justify-end md:mt-5 mt-0 absolute top-8 2xl:right-16 right-2 lg:right-5">
                 <MdOutlineClose
-                  className="lg:size-7 size-10 text-black cursor-pointer"
+                  className="lg:size-7 size-10 text-red-500 cursor-pointer"
                   onClick={handleCloseModal}
                 />
               </div>
