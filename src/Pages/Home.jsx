@@ -13,18 +13,24 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+
+
 const NextArrow = ({ onClick }) => (
-  <IoIosArrowForward
-    className="size-9 absolute top-1/2 right-[-60px] transform -translate-y-1/2 text-gray-500 cursor-pointer"
+ <div className="w-10 h-10 rounded-md border-[1px] border-[#D6D6D6] md:border-0 flex justify-center items-center absolute md:top-1/2 bottom-[-180px] right-[150px] md:right-[-60px] md:transform md:-translate-y-1/2 text-gray-500 ">
+   <IoIosArrowForward
+    className="md:size-9 size-7 text-[#212121] cursor-pointer"
     onClick={onClick}
   />
+ </div>
 );
 
 const PrevArrow = ({ onClick }) => (
-  <IoIosArrowBack
-    className="size-9 absolute top-1/2 left-[-60px] transform -translate-y-1/2 text-gray-500 cursor-pointer"
+  <div className="w-10 h-10 rounded-md border-[1px] border-[#D6D6D6] md:border-0 flex justify-center items-center absolute bottom-[-180px] left-[110px] md:top-1/2 md:left-[-60px] md:transform md:-translate-y-1/2 text-gray-500 ">
+    <IoIosArrowBack
+    className="md:size-9 size-7 text-[#212121] cursor-pointer"
     onClick={onClick}
   />
+  </div>
 );
 
 const Home = () => {
@@ -79,14 +85,14 @@ const Home = () => {
   };
 
   return (
-    <div className="">
+    <div className="mb-6">
       <Container>
         <div className="">
-          <h4 className="text-[#1C1C1C] text-[16px] font-medium font-Poppins  uppercase">
+          <h4 className="text-[#1C1C1C] text-[16px] font-medium font-Poppins uppercase">
           WORK samples
           </h4>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 mt-[32px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 lg:mt-[32px] mt-[45px]">
             {projects.map((project, index) => (
               <div
                 key={project._id}
@@ -105,7 +111,7 @@ const Home = () => {
                   className="size-8 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   onClick={() => handleExpandClick(index)}
                 />
-                <p className="text-[#404040] text-[14px] font-FuturaPT font-light leading-[22.4px]  tracking-[0.84px] text-center mt-4 ">
+                <p className="text-[#404040] text-[14px] font-FuturaPT font-light leading-[22.4px]  tracking-[0.84px] text-center md:mt-4 mt-2">
                   {project?.caption}
                 </p>
               </div>
@@ -117,12 +123,13 @@ const Home = () => {
               className={`fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-white z-50 max-w-[1920px] mx-auto 2xl:px-0 lg:px-2 px-2 xl:px-4`}
             >
               <div className="lg:flex justify-center 2xl:gap-[164px] lg:gap-20 2xl:mt-[127px] lg:mt-[70px] xl:mt-[90px] mt-20 md:mt-[120px]">
+
                 <div className="2xl:w-[600px] lg:w-[440px] xl:w-[550px] 2xl:h-[728px] lg:h-[470px] xl:h-[500px] h-full w-full zoom-in">
                   <Slider {...sliderSettings} initialSlide={currentSlide}>
                     {projects.map((project) => (
                       <div
                         key={project._id}
-                        className="2xl:h-[728px] lg:h-[470px] xl:h-[500px] w-full h-[450px] md:h-[600px] outline-0 border-none"
+                        className="2xl:h-[728px] lg:h-[470px] xl:h-[500px] w-full h-[450px] md:h-[600px] outline-0 border-none mt-[32px] md:mt-[32px] lg:mt-0 xl:mt-0 2xl:mt-0"
                       >
                         <img
                           src={project?.image}
@@ -134,21 +141,21 @@ const Home = () => {
                   </Slider>
                 </div>
 
-                <div className="zoom-in 2xl:mt-[58px] lg:mt-[58px] mt-10">
+                <div className="zoom-in 2xl:mt-[58px] lg:mt-[58px] mt-6">
                   <h1 className="text-[#1C1C1C] md:text-[32px] text-[24px] font-Poppins font-normal leading-[44px]">
                     {" "}
                     {projects[currentSlide]?.caption}
                   </h1>
 
-                  <p className="text-[#1C1C1C] text-[16px]  font-Poppins font-normal leading-[24px] mt-2">
+                  <p className="text-[#1C1C1C] md:text-[16px] text-[14px]  font-Poppins font-normal leading-[24px] md:mt-4 mt-4 lg:mt-2">
                     {projects[currentSlide]?.size}
                   </p>
                 </div>
               </div>
 
-              <div className="flex justify-end mt-5 absolute top-8 2xl:right-16 lg:right-5">
+              <div className="flex justify-end mt-5 absolute top-8 2xl:right-16 right-2 lg:right-5">
                 <MdOutlineClose
-                  className="size-7 text-black cursor-pointer"
+                  className="lg:size-7 size-10 text-black cursor-pointer"
                   onClick={handleCloseModal}
                 />
               </div>

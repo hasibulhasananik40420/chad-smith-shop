@@ -17,7 +17,7 @@ const MobileMenu = () => {
            <div>
            <Link
           to={'/'}
-          className="text-[#1C1C1C] md:text-[34px] text-[20px] font-Poppins font-normal tracking-normal cursor-pointer"
+          className="text-[#1C1C1C] md:text-[34px] text-[24px] font-Poppins font-normal tracking-normal cursor-pointer"
         >
           Chad Smith
         </Link>
@@ -40,8 +40,8 @@ const MobileMenu = () => {
            </div>
             
           <div className="flex flex-col gap-5 p-8">
-          <Link to={'/'} onClick={toggleMenu} className="text-white text-[16px] font-Poppins font-normal leading-6 uppercase">
-          WORK samples
+          <Link to={'/'} onClick={toggleMenu} className="text-white text-[16px] font-Poppins font-normal leading-6 uppercase ">
+             WORK samples
             </Link>
 
 

@@ -9,7 +9,7 @@ const Contact = () => {
             Contact
           </h1>
           <div className="mt-[32px] lg:w-[584px] w-full mx-auto">
-            <form className="flex flex-col gap-[15px]">
+            <form className="flex flex-col gap-[16px]">
               <div className="lg:flex gap-6">
                 <div>
                   <label
@@ -24,7 +24,7 @@ const Contact = () => {
                   />
                 </div>
 
-                <div>
+                <div className="mt-4 md:mt-4 lg:mt-0 xl:mt-0 2xl:mt-0">
                   <label
                     htmlFor="Last Name*"
                     className="text-[#1C1C1C] text-[14px] font-Poppins font-normal leading-5"
@@ -89,7 +89,7 @@ const Contact = () => {
             </form>
           </div>
 
-          <div className="bg-[#25242D] lg:w-[910px] lg:h-[198px] w-full h-full mx-auto mt-[66px] lg:px-[120px] lg:py-12 px-[30px] py-[30px]">
+          <div className="bg-[#25242D] lg:w-[910px] lg:h-[198px] w-full h-full mx-auto md:mt-[66px] mt-12 lg:px-[120px] lg:py-12 px-[30px] py-[30px]">
             <h3 className="text-white md:text-[20px] text-[18px] font-Poppins font-semibold leading-[30px]">
               Sign up with your email address to receive news and updates
             </h3>
