@@ -15,18 +15,18 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 //-right-60px  text-[#212121]
 const NextArrow = ({ onClick }) => (
-  <div className="w-10 h-10 rounded-full border-[1px] border-[#D6D6D6]  flex justify-center items-center absolute md:top-1/2 bottom-[-180px] right-[150px] md:right-[-360px] md:transform md:-translate-y-1/2 text-gray-500 ">
+  <div className="w-10 h-10 rounded-full border-[1px] border-[#D6D6D6] md:border-0 flex justify-center items-center absolute md:top-1/2 bottom-[-100px] right-[130px] md:right-[-60px] md:transform md:-translate-y-1/2 text-gray-500 ">
     <IoIosArrowForward
-      className="md:size-9 size-7 text-white cursor-pointer"
+      className="md:size-9 size-7 text-[#E9ECEF] hover:text-black duration-200 cursor-pointer"
       onClick={onClick}
     />
   </div>
 );
 
 const PrevArrow = ({ onClick }) => (
-  <div className="w-10 h-10 rounded-full border-[1px] border-[#D6D6D6]  flex justify-center items-center absolute bottom-[-180px] left-[110px] md:top-1/2 md:left-[-360px] md:transform md:-translate-y-1/2 text-gray-500 ">
+  <div className="w-10 h-10 rounded-full border-[1px] border-[#D6D6D6] md:border-0 flex justify-center items-center absolute bottom-[-100px] left-[130px] md:top-1/2 md:left-[-60px] md:transform md:-translate-y-1/2 text-gray-500 ">
     <IoIosArrowBack
-      className="md:size-9 size-7 text-white cursor-pointer"
+      className="md:size-9 size-7 text-[#E9ECEF] hover:text-black duration-200 cursor-pointer"
       onClick={onClick}
     />
   </div>
@@ -118,7 +118,7 @@ const Home = () => {
 
           {sliderModalOpen && (
             <div
-              className={`fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-black z-50 max-w-[1920px]  mx-auto 2xl:px-0 lg:px-2 px-2 xl:px-4`}
+              className={`fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-white z-50 max-w-[1920px]  mx-auto 2xl:px-0 lg:px-2 px-2 xl:px-4`}
             >
               <div className="lg:flex justify-center 2xl:gap-20 lg:gap-20 2xl:mt-[60px] lg:mt-[70px] xl:mt-[40px] mt-20 md:mt-[120px]">
                 <div className="2xl:w-[650px] lg:w-[550px] xl:w-[550px]   w-full h-full zoom-in">
@@ -160,7 +160,7 @@ const Home = () => {
 
               <div className="flex justify-end md:mt-5 mt-0 absolute top-8 2xl:right-16 right-2 lg:right-5">
                 <MdOutlineClose
-                  className="lg:size-7 size-10 text-red-500 cursor-pointer"
+                  className="lg:size-7 size-10 text-black cursor-pointer"
                   onClick={handleCloseModal}
                 />
               </div>
