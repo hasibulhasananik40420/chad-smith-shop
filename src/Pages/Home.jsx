@@ -98,7 +98,7 @@ const Home = () => {
               >
                 <div className="2xl:h-[424px] xl:h-[330px] lg:h-[320px] h-[350px] overflow-hidden group">
                   <img
-                    className="w-full h-full object-center"
+                    className="w-full h-full object-cover"
                     src={project?.image}
                     alt="product image"
                     onClick={() => handleExpandClick(index)}
