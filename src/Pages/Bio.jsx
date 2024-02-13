@@ -12,7 +12,7 @@ const Bio = () => {
 
                 <div className="mt-[32px] lg:flex lg:gap-24 xl:gap-24 2xl:gap-[150px]">
 
-                  <div className="lg:w-[536px] w-full h-[400px] md:h-[700px] xl:h-[444px] 2xl:h-[500px]">
+                  <div className="lg:w-[536px] w-full h-[400px] md:h-[700px] lg:h-[444px] xl:h-[444px] 2xl:h-[500px]">
                      <img className="w-full h-full object-cover rounded-lg" src={chad2} alt="" />
                   </div>
 
