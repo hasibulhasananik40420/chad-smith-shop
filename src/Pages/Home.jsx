@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Container from "../shared/Container";
-import product1 from "../assets/image 7.png";
+import product1 from "../assets/products.jpg";
 import product2 from "../assets/product2.png";
 import product3 from "../assets/product3.png";
 import productextra from "../assets/product33.png";
@@ -126,7 +126,7 @@ const Home = () => {
                     {projects.map((project, index) => (
                       <div
                         key={project._id}
-                        className="2xl:w-[650px] lg:w-[550px] xl:w-[550px] 2xl:h-[650px] lg:h-[550px] xl:h-[550px] w-full h-[350px] md:h-[600px] outline-0 border-none mt-[32px] md:mt-[32px] lg:mt-0 xl:mt-0 2xl:mt-0"
+                        className="2xl:w-[650px] lg:w-[550px] xl:w-[550px] 2xl:h-[640px] lg:h-[540px] xl:h-[540px] w-full h-[350px] md:h-[600px] outline-0 border-none mt-[32px] md:mt-[32px] lg:mt-0 xl:mt-0 2xl:mt-0"
                       >
                         {index === currentSlide ? (
                           <img
