@@ -15,22 +15,22 @@
 
 
 
-/* .zoom-in {
+.zoom-in {
   animation: zoomIn 0.7s ease;
-} */
+}
 
 /* .zoom-out {
   animation: zoomOut 0.7s ease;
 } */
 
-/* @keyframes zoomIn {
+@keyframes zoomIn {
   from {
     transform: scale(0);
   }
   to {
     transform: scale(1);
   }
-} */
+}
 
 /* @keyframes zoomOut {
   from {

@@ -147,16 +147,16 @@ const Home = () => {
                   </Slider>
                 </div>
 
-                {/* <div className="zoom-in 2xl:mt-[58px] lg:mt-[58px] mt-6">
-                  <h1 className="text-[#1C1C1C] md:text-[32px] text-[24px] font-Poppins font-normal leading-[44px]">
+                <div className="block lg:hidden">
+                  {/* <h1 className="text-[#1C1C1C] md:text-[32px] text-[24px] font-Poppins font-normal leading-[44px]">
                     {" "}
                     {projects[currentSlide]?.caption}
-                  </h1>
+                  </h1> */}
 
-                  <p className="text-[#1C1C1C] md:text-[16px] text-[14px]  font-Poppins font-normal leading-[24px] md:mt-4 mt-4 lg:mt-2">
-                    {projects[currentSlide]?.size}
+                  <p className="text-[#1C1C1C] md:text-[16px] text-[14px] font-Poppins font-normal leading-[24px] text-center">
+                    {projects[currentSlide]?.caption}
                   </p>
-                </div> */}
+                </div>
               </div>
 
               <div className="flex justify-end md:mt-5 mt-0 absolute top-8 2xl:right-16 right-2 lg:right-5">
