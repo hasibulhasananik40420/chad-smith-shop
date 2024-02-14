@@ -153,7 +153,7 @@ const Home = () => {
                     {projects[currentSlide]?.caption}
                   </h1> */}
 
-                  <p className="text-[#1C1C1C] md:text-[16px] text-[14px] font-Poppins font-normal leading-[24px] text-center">
+                  <p className="text-[#404040] text-[14px] font-FuturaPT font-light leading-[22.4px]  tracking-[0.84px] text-center md:mt-4 mt-2">
                     {projects[currentSlide]?.caption}
                   </p>
                 </div>
