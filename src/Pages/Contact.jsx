@@ -9,7 +9,8 @@ const Contact = () => {
             Contact
           </h1>
           <div className="mt-[32px] lg:w-[584px] w-full mx-auto">
-            <form className="flex flex-col gap-[16px]">
+            <form   action="https://formspree.io/f/xayrojww"
+                   method="POST" className="flex flex-col gap-[16px]">
               <div className="lg:flex gap-6">
                 <div>
                   <label
@@ -20,6 +21,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
+                    name="firstName"
                     className="lg:w-[280px] w-full h-[48px] border-[1px] border-[#1C1C1C] block mt-[6px] outline outline-0 transition-all pl-4 focus:ring-[0.7px] focus:ring-neutral-600 duration-500 "
                   />
                 </div>
@@ -33,6 +35,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
+                    name="lastName"
                     className="lg:w-[280px] w-full h-[48px] border-[1px] border-[#1C1C1C] block mt-[6px] outline outline-0 transition-all pl-4 focus:ring-[0.7px] focus:ring-neutral-600 duration-500 "
                   />
                 </div>
@@ -47,6 +50,7 @@ const Contact = () => {
                 </label>
                 <input
                   type="email"
+                  name="email"
                   className="w-full h-[48px] border-[1px] border-[#1C1C1C] block mt-[6px] outline outline-0 transition-all pl-4 focus:ring-[0.7px] focus:ring-neutral-600 duration-500 "
                 />
               </div>
@@ -60,6 +64,7 @@ const Contact = () => {
                 </label>
                 <input
                   type="text"
+                  name="phone"
                   className="w-full h-[48px] border-[1px] border-[#1C1C1C] block mt-[6px] outline outline-0 transition-all pl-4 focus:ring-[0.7px] focus:ring-neutral-600 duration-500 "
                 />
               </div>
@@ -72,6 +77,7 @@ const Contact = () => {
                   Message*
                 </label>
                 <textarea
+              
                   className="w-full h-[180px]  block border-[1px] border-[#1C1C1C] mt-[6px] outline outline-0 transition-all pl-4 pt-4 focus:ring-[0.7px] focus:ring-neutral-600 duration-500"
                   name="message"
                   id=""
