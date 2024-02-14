@@ -135,11 +135,12 @@ const Home = () => {
                             className=" object-contain w-full h-full"
                           />
                         ) : (
-                          <img
-                            src={project?.image}
-                            alt="expanded image"
-                            className=" object-contain w-full h-full"
-                          />
+                          // <img
+                          //   src={project?.image}
+                          //   alt="expanded image"
+                          //   className=" object-contain w-full h-full"
+                          // />
+                          <></>
                         )}
                       </div>
                     ))}
