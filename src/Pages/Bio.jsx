@@ -1,11 +1,16 @@
 /* eslint-disable react/no-unescaped-entities */
 import Container from "../shared/Container"
 import chad2 from '../assets/chad.png'
+import { Helmet } from "react-helmet-async"
 
 
 const Bio = () => {
   return (
     <div>
+       <Helmet>
+        <title>Chad Smith - Bio</title>
+       
+      </Helmet>
         <Container>
             <div className="mb-6">
                 <h1 className="text-[#1C1C1C] text-[18px] font-Poppins font-medium leading-7 uppercase mt-6 md:mt-6 lg:mt-0 xl:mt-0 2xl:mt-0">Bio</h1>

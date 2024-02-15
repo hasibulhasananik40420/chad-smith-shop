@@ -1,8 +1,13 @@
+import { Helmet } from "react-helmet-async";
 import Container from "../shared/Container";
 
 const Contact = () => {
   return (
     <div>
+       <Helmet>
+        <title>Chad Smith - Contact</title>
+       
+      </Helmet>
       <Container>
         <div className="">
           <h1 className="text-[#1C1C1C] text-[18px] font-Poppins font-medium leading-7 uppercase mt-6 md:mt-6 lg:mt-0 xl:mt-0 2xl:mt-0">

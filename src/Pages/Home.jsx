@@ -13,6 +13,7 @@ import { MdOutlineClose } from "react-icons/md";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Helmet } from "react-helmet-async";
 //-right-60px  text-[#212121]
 const NextArrow = ({ onClick }) => (
   <div className="w-10 h-10 rounded-full border-[1px] border-[#D6D6D6] md:border-0 flex justify-center items-center absolute md:top-1/2 bottom-[-100px] right-[130px] md:right-[-60px] md:transform md:-translate-y-1/2 text-gray-500 ">
@@ -83,7 +84,13 @@ const Home = () => {
   };
 
   return (
-    <div className="mb-6">
+    <div>
+       <Helmet>
+        <title>Chad Smith - Work Samples</title>
+       
+      </Helmet>
+      <div className="mb-6">
+      
       <Container>
         <div className="">
           <h4 className="text-[#1C1C1C] text-[16px] font-medium font-Poppins uppercase mt-6 md:mt-6 lg:mt-0 xl:mt-0 2xl:mt-0">
@@ -159,7 +166,7 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className="flex justify-end md:mt-5 mt-0 absolute top-8 2xl:right-16 right-2 lg:right-5">
+              <div className="flex justify-end md:mt-5 mt-5 absolute top-8 2xl:right-16 right-2 lg:right-5">
                 <MdOutlineClose
                   className="lg:size-7 size-10 text-black cursor-pointer"
                   onClick={handleCloseModal}
@@ -169,6 +176,7 @@ const Home = () => {
           )}
         </div>
       </Container>
+    </div>
     </div>
   );
 };
