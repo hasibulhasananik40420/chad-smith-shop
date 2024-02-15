@@ -105,18 +105,19 @@ const Contact = () => {
               Sign up with your email address to receive news and updates
             </h3>
 
-            <div className="mt-6 md:flex">
+            <form action="https://formspree.io/f/xayrojww"
+                   method="POST" className="mt-6 md:flex">
               <input
                 className="lg:w-[568px] w-full h-[48px] bg-[#25242D] border-[1px] border-white pl-4 text-white text-[16px] font-Poppins font-normal leading-6 outline-0"
                 type="email"
-                name=""
+                name="email"
                 id=""
                 placeholder="Email"
               />
-              <button className="w-[102px]  h-[48px] mt-3 md:mt-0 bg-white text-[#25242D] text-[16px] font-Poppins font-semibold leading-6">
+              <button type="submit" className="w-[102px]  h-[48px] mt-3 md:mt-0 bg-white text-[#25242D] text-[16px] font-Poppins font-semibold leading-6">
                 Sign Up
               </button>
-            </div>
+            </form>
           </div>
         </div>
       </Container>
