@@ -51,7 +51,17 @@ const Bio = () => {
                      <div className="lg:mt-5 mt-6">
                          <h1 className="text-[24px] text-[#080808] font-Poppins font-light leading-[30px]">Artist Statement</h1>
 
-                        <p className="text-[#080808] lg:mt-3 mt-4 text-[14px] font-Poppins font-light leading-6 ">I've always enjoyed working with others to make art. I've collaborated with video artists, illustrators, animators and 3D print makers to explore new genres and ideas of artistic exploration. My portfolio pieces, "Self-portrait", "please help me", and "A talk on the mind", are a few of my favorite collaborative projects so far. Each piece is a snapshot from my personal life and builds upon a common theme; entitled, "the black man and the gold box". I'm currently interested in art exhibitions, opportunities to reuse "the black man and the gold box" theme to disseminate research findings and partnerships to mass produce created artwork. In addition, I'm always interested in collaborating with others to create new artwork.</p>
+                        <p className="text-[#080808] lg:mt-3 mt-4 text-[14px] font-Poppins font-light leading-6 ">
+                        I've always enjoyed working with others to make art. I've collaborated with video artists, illustrators, animators and 3D print makers to explore new genres and ideas of artistic exploration. 
+                        </p>
+
+                        <p className="text-[#080808] lg:mt-2 mt-2 text-[14px] font-Poppins font-light leading-6 ">
+                        My portfolio pieces, "Self-portrait", "please help me", and "A talk on the mind", are a few of my favorite collaborative projects so far. Each piece is a snapshot from my personal life and builds upon a common theme; entitled, "the black man and the gold box".
+                        </p>
+
+                        <p className="text-[#080808] lg:mt-2 mt-2 text-[14px] font-Poppins font-light leading-6 ">
+                        I'm currently interested in art exhibitions, opportunities to reuse "the black man and the gold box" theme to disseminate research findings and partnerships to mass produce created artwork. In addition, I'm always interested in collaborating with others to create new artwork.
+                        </p>
                         </div>
 
 
