@@ -51,7 +51,7 @@ const Bio = () => {
                      <div className="lg:mt-5 mt-6">
                          <h1 className="text-[24px] text-[#080808] font-Poppins font-light leading-[30px]">Artist Statement</h1>
 
-                        <p className="text-[#080808] lg:mt-3 mt-4 text-[14px] font-Poppins font-light leading-6 ">I've always been interested in working across mediums. In my mid-20s, I began collaborating with other artists in the medium of Video Art. Using Collaboration as a tool allowed me to enter other artist's styles, and extend my own style, to create something unachievable alone. I've currently landed in 3D Printing and Photography, collaborating with illustrators, animators and 3D printing professionals, to build a collection of new work. "Self-portrait", "please help me", and "A talk on the mind" are a few of my favorites from the collection so far.</p>
+                        <p className="text-[#080808] lg:mt-3 mt-4 text-[14px] font-Poppins font-light leading-6 ">I've always enjoyed working with others to make art. I've collaborated with video artists, illustrators, animators and 3D print makers to explore new genres and ideas of artistic exploration. My portfolio pieces, "Self-portrait", "please help me", and "A talk on the mind", are a few of my favorite collaborative projects so far. Each piece is a snapshot from my personal life and builds upon a common theme; entitled, "the black man and the gold box". I'm currently interested in art exhibitions, opportunities to reuse "the black man and the gold box" theme to disseminate research findings and partnerships to mass produce created artwork. In addition, I'm always interested in collaborating with others to create new artwork.</p>
                         </div>
 
 
