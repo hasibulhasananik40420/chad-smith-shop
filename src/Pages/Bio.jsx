@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Container from "../shared/Container"
-import chad2 from '../assets/chad.png'
+import chad2 from '../assets/chad.jpg'
 import { Helmet } from "react-helmet-async"
 
 
